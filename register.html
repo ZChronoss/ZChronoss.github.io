@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAM DINER Register</title>
+    <link rel="stylesheet" href="register.css">
+    <script src = "register.js"></script>
+</head>
+<body>
+    <header>
+        <div class = "logo_image">
+            <img class = "logo" src = "./images/logo.svg">
+        </div>
+        <div class = "register_login">
+            <ul>
+                <a style = "text-decoration: none;" href = "register.html" ><li style="background-color: lightblue; color: black;" class ="reg_log">REGISTER</li></a>
+                <a style = "text-decoration: none;" href = "login.html"><li class ="reg_log">LOGIN</li></a>
+            </ul>
+        </div>
+    </header>
+    <div class = "nav">
+        <button class = "active" onclick="location.href='index.html'">HOME</button>
+        <button class = "dropdown">MENU&#x25BE;
+            <div class = "dropdown_cnt">
+                <a class = "burger_link" href="burger.html"><li class = "dropdown_content">BURGER</li></a>
+                <li class = "dropdown_content">RICE &<br> PASTA</li>
+                <li class = "dropdown_content">SEAFOOD</li>
+            </div>
+        </button>
+        <button class = "menu" onclick="location.href='about_us.html'">ABOUT US</button>
+    </div>
+    <div class = "register_form">
+        <h1 style = "text-align: center; margin-bottom: 20px;">Register</h1>
+        <div class = "name">
+            <label for = "name">Name:<br></label>
+            <input type = "name" name = "name" id = "user_name"> 
+        </div>
+        <div class = "email">
+            <label for = "email">Email:<br></label>
+            <input type = "email" name="name" id = "user_email">
+        </div>
+        <div class = "gender">
+            <label for = "gender">Gender<br></label>
+            <input style="margin-bottom: 15px;" type = "radio" name = "kelamin" id = "user_gender" value = "male">
+            <label>Male</label>
+            <input type = "radio" name = "kelamin" id = "user_gender" value = "female">
+            <label>Female</label>
+        </div>
+        <div class="city">
+            <label for = "city">City:<br></label>
+            <select name="city" id="user_city">
+                <option value="ambon">Ambon</option>
+                <option value="balikpapan">Balikpapan</option>
+                <option value="banda_aceh">Banda Aceh</option>
+                <option value="bandar_lampung">Bandar Lampung</option>
+                <option value="bandung">Bandung</option>
+                <option value="banjar">Banjar</option>
+                <option value="banjarbaru">Banjarbaru</option>
+                <option value="banjarmasin">Banjarmasin</option>
+                <option value="batam">Batam</option>
+                <option value="batu">Batu</option>
+                <option value="baubau">Baubau</option>
+                <option value="bekasi">Bekasi</option>
+                <option value="bengkulu">Bengkulu</option>
+                <option value="bima">Bima</option>
+                <option value="binjai">Binjai</option>
+                <option value="bitung">Bitung</option>
+                <option value="blitar">Blitar</option>
+                <option value="bogor">Bogor</option>
+                <option value="bontang">Bontang</option>
+                <option value="bukittinggi">Bukittingi</option>
+                <option value="cilegon">Cilegon</option>
+                <option value="cimahi">Cimahi</option>
+                <option value="cirebon">Cirebon</option>
+                <option value="denpasar">Denpasar</option>
+                <option value="depok">Depok</option>
+                <option value="dumai">Dumai</option>
+                <option value="gorontalo">Gorontalo</option>
+                <option value="gunungsitoli">Gunungsitoli</option>
+                <option value="jakarta_barat">Jakarta Barat</option>
+                <option value="jakarta_pusat">Jakarta Pusat</option>
+                <option value="jakarta_selatan">Jakarta Selatan</option>
+                <option value="jakarta_timur">Jakarta Timur</option>
+                <option value="jakarta_utara">Jakarta Utara</option>
+                <option value="jambi">Jambi</option>
+                <option value="jayapura">Jayapura</option>
+                <option value="kediri">Kediri</option>
+                <option value="kendari">Kendari</option>
+                <option value="kotamobagu">Kotamobagu</option>
+                <option value="kupang">Kupang</option>
+                <option value="langsa">Langsa</option>
+                <option value="lhokseumawe">Lhokseumawe</option>
+                <option value="lubuklinggau">Lubuklinggau</option>
+                <option value="madiun">Madiun</option>
+                <option value="magelang">Magelang</option>
+                <option value="makassar">Makassar</option>
+                <option value="malang">Malang</option>
+                <option value="manado">Manado</option>
+                <option value="matara">Mataram</option>
+                <option value="medan">Medan</option>
+                <option value="metro">Metro</option>
+                <option value="mojokerto">Mojokerto</option>
+                <option value="padang">Padang</option>
+                <option value="padangpanjang">Padangpanjang</option>
+                <option value="padangsidempuan">Padangsidempuan</option>
+                <option value="pagar_alam">Pagar Alam</option>
+                <option value="palangkaraya">Palangkaraya</option>
+                <option value="palembang">Palembang</option>
+                <option value="palopo">Palopo</option>
+                <option value="palu">Palu</option>
+                <option value="pangkal_pinang">Pangkal Pinang</option>
+                <option value="parepare">Parepare</option>
+                <option value="pariaman">Pariaman</option>
+                <option value="pasuruan">Pasuruan</option>
+                <option value="payakumbuh">Payakumbuh</option>
+                <option value="pekalongan">Pekalongan</option>
+                <option value="pekanbaru">Pekanbaru</option>
+                <option value="pematangsiantar">Pematangsiantar</option>
+                <option value="pontianak">Pontianak</option>
+                <option value="prabumulih">Prabumulih</option>
+                <option value="probolinggo">Probolinggo</option>
+                <option value="sabang">Sabang</option>
+                <option value="salatiga">Salatiga</option>
+                <option value="samarinda">Samarinda</option>
+                <option value="sawahlunto">Sawahlunto</option>
+                <option value="semarang">Semarang</option>
+                <option value="serang">Serang</option>
+                <option value="sibolga">Sibolga</option>
+                <option value="singkawang">Singkawang</option>
+                <option value="solok">Solok</option>
+                <option value="sorong">Sorong</option>
+                <option value="subulussalam">Subulussalam</option>
+                <option value="sukabumi">Sukabumi</option>
+                <option value="sungai_penuh">Sungai Penuh</option>
+                <option value="surabaya">Surabaya</option>
+                <option value="surakarta">Surakarta</option>
+                <option value="tangerang_selatan">Tangerang Selatan</option>
+                <option value="tangerang">Tangerang</option>
+                <option value="tanjungbalai">Tanjungbalai</option>
+                <option value="tanjung_pinang">Tanjung Pinang</option>
+                <option value="tarakan">Tarakan</option>
+                <option value="tasikmalaya">Tasikmalaya</option>
+                <option value="tebing_tinggi">Tebing Tinggi</option>
+                <option value="tegal">Tegal</option>
+                <option value="ternate">Ternate</option>
+                <option value="tidore_kepulauan">Tidore Kepulauan</option>
+                <option value="tomohon">Tomohon</option>
+                <option value="tual">Tual</option>
+                <option value="yogyakarta">Yogyakarta</option>
+            </select>
+        </div>
+        <div class = "password">
+            <label for="password">Password:<br></label>
+            <input type="password" name="password" id="user_password">
+        </div>
+        <div class = "confirm_password">
+            <label for="password">Confirm Password:<br></label>
+            <input type="password" name="password" id="confirm_password">
+        </div>
+        <div class = "button">
+            <button class = "register_button" type="submit" onclick = "validate()">Register</button>
+        </div>
+    </div>
+</body>
+<footer>
+    <a href="https://twitter.com/yourmidnitelily?t=WdeT5LlndfYwdvoboNZvGg&s=09" target="_blank"><img class = "sosmed" src = "./images/twitter.png"></a>
+    <a href="https://www.facebook.com/renaldi.antonioii/" target="_blank"><img class = "sosmed" src = "./images/facebook.png"></a>
+    <a href="https://www.instagram.com/renaldi_antonio/" target="_blank"><img class = "sosmed" src = "./images/instagram.png"></a>
+    <p class="copy_text">Copyright &copy 2021 Renaldi Antonio. All Rights Reserved</p>
+</footer>
+</html>

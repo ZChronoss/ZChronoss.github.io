@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAMDINER Burger</title>
+    <link rel="stylesheet" href="burger.css">
+</head>
+
+<body>
+    <header>
+        <div class = "logo_image">
+            <img class = "logo" src = "./images/logo.svg">
+        </div>
+        <div class = "register_login">
+            <ul>
+                <a style = "text-decoration: none;" href = "register.html" ><li class ="reg_log">REGISTER</li></a>
+                <a style = "text-decoration: none;" href = "login.html"><li class ="reg_log">LOGIN</li></a>
+            </ul>
+        </div>
+    </header>
+    <div class = "nav">
+        <button class = "active" onclick="location.href='index.html'">HOME</button>
+        <button class = "dropdown">MENU&#x25BE;
+            <div class = "dropdown_cnt">
+                <li class = "dropdown_burger" onClick = "window.location.reload()">BURGER</li>
+                <li class = "dropdown_content">RICE &<br> PASTA</li>
+                <li class = "dropdown_content">SEAFOOD</li>
+            </div>
+        </button>
+        <button class = "menu" onclick="location.href='about_us.html'">ABOUT US</button> 
+    </div>
+    <div class = desc>
+        <h1 class = "burger_text">Burger</h1>
+        <h2 class="burger_desc">A circular shaped grounded meat jammed between two buns and usually accompanied with 
+            cheese, sauce, and vegetables. It is a classic delicacy for diner type restaurant.</h2>
+    </div>
+    <div class = "foods">
+        <div class = "foods_burger">
+            <div>
+                <img  class = "foods_image" src = "./images/kromer_burger.png">
+            </div>
+            <div class = "foods_name">
+                <p style="margin-bottom: 10px;">Kromer Burger</p>
+            </div>
+            <div class = "foods_price">
+                <p style="margin-bottom: 51.5px;">Rp. 50,000</p>
+            </div>
+            <p class = "most_popular">MOST POPULAR</p>
+        </div>
+        <div class = "foods_burger">
+            <div>
+                <img class = "foods_image" src = "./images/cheeseburger.png">
+            </div>
+            <div class = "foods_name">
+                <p style="margin-bottom: 10px;">Cheeseburger</p>
+            </div>
+            <div class = "foods_price">
+                <p style="margin-bottom: 30px;">Rp. 25,000</p>
+            </div>
+        </div>
+        <div class = "foods_burger">
+            <div>
+                <img class = "foods_image" src = "./images/chicken_burger.png">
+            </div>
+            <div class = "foods_name">
+                <p style="margin-bottom: 10px;">Chicken Burger</p>
+            </div>
+            <div class = "foods_price">
+                <p style="margin-bottom: 30px;">Rp. 35,000</p>
+            </div>
+        </div>
+        <div class = "foods_burger">
+            <div>
+                <img class = "foods_image" src = "./images/hopper_burger.png">
+            </div>
+            <div class = "foods_name">
+                <p style="margin-bottom: 10px;">Hopper Burger</p>
+            </div>
+            <div class = "foods_price">
+                <p style="margin-bottom: 30px;">Rp. 40,000</p>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <a href="https://twitter.com/yourmidnitelily?t=WdeT5LlndfYwdvoboNZvGg&s=09" target="_blank"><img class = "sosmed" src = "./images/twitter.png"></a>
+    <a href="https://www.facebook.com/renaldi.antonioii/" target="_blank"><img class = "sosmed" src = "./images/facebook.png"></a>
+    <a href="https://www.instagram.com/renaldi_antonio/" target="_blank"><img class = "sosmed" src = "./images/instagram.png"></a>
+    <p class="copy_text">Copyright &copy 2021 Renaldi Antonio. All Rights Reserved</p>
+</footer>
+</html>

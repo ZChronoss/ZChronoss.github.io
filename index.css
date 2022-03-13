@@ -1,0 +1,271 @@
+*{
+    padding :0;
+    margin: 0;
+}
+
+.logo_image{
+    display: flex;
+    float: left;
+}
+
+.logo{
+    width: 160px;
+    height: 50px;
+    margin-top: 9px;
+    display: inline-block;
+}
+
+header{
+    background-image: linear-gradient(to bottom right, #1c253c, #4F66A1);
+    height: 60px;
+    width: 100%;
+}
+
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/background_home.jpg");
+    max-width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+.register_login{
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.reg_log{
+    list-style: none;
+    background-color: #2B2B2B;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    margin: 10px 4px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width:80px;
+    text-decoration: none;
+}
+
+.reg_log:hover{
+    transition: all 0.3s ease;
+    color:black;
+    background-color: lightblue;
+}
+
+.menu{
+    width: 105px;
+    background-color:#2B2B2B;
+    color: white;
+    border: none;
+    padding: 15px 0px;
+    margin-top: 0;
+    display: inline-block;
+    font-weight: bold;
+    
+}
+
+.menu:hover{
+    cursor: pointer;
+    background-color: lightblue;
+    transition: all 0.3s ease;
+    color:black;
+}
+
+.nav{
+    background-color: #2B2B2B;
+    width: 100%;
+    display: flex;
+}
+
+
+.dropdown_cnt{
+    background-color: #2B2B2B;
+    color: white;
+    width: 105px;
+    list-style: none;
+    text-align: center;
+    margin-top: 15.5px;
+    display: none;
+    position: absolute;
+}
+
+.dropdown_content{
+    padding-top:15px;
+    padding-bottom:15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.dropdown_content:hover{
+    background-color: lightblue;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    color:black;
+}
+
+.dropdown:hover .dropdown_cnt{
+    display :block;
+}
+
+.dropdown{
+    width: 105px;
+    background-color:#2B2B2B;
+    color: white;
+    border: none;
+    padding: 15px 0px;
+    margin-top: 0;
+    font-weight: bold; 
+}
+
+.dropdown:hover{
+    cursor: pointer;
+    background-color: lightblue;
+    transition: all 0.3s ease;
+    color:black;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #2B2B2B;
+    color: white;
+    text-align: center;
+}
+
+.sosmed{
+    margin-right: 5px;
+    margin-left:5px;
+    margin-top:10px;
+    padding-bottom: 10px;
+    height:15px;
+}
+
+.copy_text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.home{
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top:200px;
+}
+
+.welcome_text{
+    margin-bottom: 30px; 
+    font-size: 35px;
+}
+
+.welcome_desc{
+    margin-bottom: 30px; 
+    font-weight: lighter;
+}
+
+.open_menu{
+    background-color: #2B2B2B;
+    text-decoration: none;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.open_menu:hover{
+    background-color: lightblue;
+    transition: all 0.3s ease;
+    color:black;
+}
+
+.active{
+    background-color: lightblue;
+    width: 105px;
+    color: black;
+    border: none;
+    padding: 15px 0px;
+    margin-top: 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.burger_link{
+    text-decoration: none;
+    color:white;
+}
+
+@media screen and (max-width: 600px) {
+    .register_login{
+        justify-content: center;
+        margin:0;
+    }
+
+    .logo_image{
+        float: none;
+        justify-content: center;
+    }
+
+    body{
+        background-position:center;
+    }
+
+    .logo{
+        width: 200px;
+        height: 100px;
+        margin-top:0;
+    }
+
+    header{
+        height: 4.48cm;
+    }
+
+    .nav{
+        justify-content: center;
+    }
+
+    .home{
+        padding-top: 90px;
+    }
+
+    .welcome_text{
+        font-size: 25px;
+    }
+
+    .welcome_desc{
+        font-size: 16px;
+    }
+
+    footer{
+        margin-top: 50px;
+    }
+
+    .active{
+        width:100%;
+    }
+
+    .dropdown{
+        width: 100%;
+    }
+
+    .menu{
+        width: 100%;
+    }
+    
+    .dropdown_cnt{
+        width: 33.4%;
+        margin-top:15px;
+    }
+    
+}

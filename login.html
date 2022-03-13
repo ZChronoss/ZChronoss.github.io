@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAM DINER Login</title>
+    <link rel="stylesheet" href="login_design.css">
+    <script src="validate.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class = "logo_image">
+            <img class = "logo" src = "./images/logo.svg">
+        </div>
+        <div class = "register_login">
+            <ul>
+                <a style = "text-decoration: none;" href = "register.html" ><li class ="reg_log">REGISTER</li></a>
+                <a style = "text-decoration: none;" href = "login.html"><li style="background-color: lightblue; color: black;" class ="reg_log">LOGIN</li></a>
+            </ul>
+        </div>
+    </header>
+    <div class = "nav">
+        <button class = "active" onclick="location.href='index.html'">HOME</button>
+        <button class = "dropdown">MENU&#x25BE;
+            <div class = "dropdown_cnt">
+                <a class = "burger_link" href="burger.html"><li class = "dropdown_content">BURGER</li></a>
+                <li class = "dropdown_content">RICE &<br> PASTA</li>
+                <li class = "dropdown_content">SEAFOOD</li>
+            </div>
+        </button>
+        <button class = "menu" onclick="location.href='about_us.html'">ABOUT US</button>
+    </div>
+    <div class = "login_form">
+        <h1 style="margin: 30px">Login</h1>
+        <div class = "email">
+            <label for = "email">Email<br></label>
+            <input type ="email" id ="email_user">
+        </div>
+        <div class = "password">
+            <label for="password">Password<br></label>
+            <input type="password" id="password_user">
+        </div>
+        <button type="submit" class = "button" onclick="validate()">Login</button>
+        <p style = "margin-top: 30px;">Want to join us? Register <a href = "register.html">here!</a></p>
+    </div>
+</body>
+<footer>
+    <a href="https://twitter.com/yourmidnitelily?t=WdeT5LlndfYwdvoboNZvGg&s=09" target="_blank"><img class = "sosmed" src = "./images/twitter.png"></a>
+    <a href="https://www.facebook.com/renaldi.antonioii/" target="_blank"><img class = "sosmed" src = "./images/facebook.png"></a>
+    <a href="https://www.instagram.com/renaldi_antonio/" target="_blank"><img class = "sosmed" src = "./images/instagram.png"></a>
+    <p class="copy_text">Copyright &copy 2021 Renaldi Antonio. All Rights Reserved</p>
+</footer>
+</html>

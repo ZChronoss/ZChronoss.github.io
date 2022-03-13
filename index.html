@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAM DINER</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <div class = "logo_image">
+            <img class = "logo" src = "./images/logo.svg">
+        </div>
+        <div class = "register_login">
+            <ul>
+                <a style = "text-decoration: none;" href = "register.html" ><li class ="reg_log">REGISTER</li></a>
+                <a style = "text-decoration: none;" href = "login.html"><li class ="reg_log">LOGIN</li></a>
+            </ul>
+        </div>
+    </header>
+    <div class = "nav">
+        <button class = "active" onClick = "window.location.reload()">HOME</button>
+        <button class = "dropdown">MENU&#x25BE;
+            <div class = "dropdown_cnt">
+                <a class = "burger_link" href="burger.html"><li class = "dropdown_content">BURGER</li></a>
+                <li class = "dropdown_content">RICE &<br> PASTA</li>
+                <li class = "dropdown_content">SEAFOOD</li>
+            </div>
+        </button>
+        <button class = "menu" onclick="location.href='about_us.html'">ABOUT US</button>
+    </div>
+    <div class = "home">
+        <h1 class = "welcome_text">WELCOME TO FAMDINER</h1>
+        <h2 class = "welcome_desc">Serves the best food with wonderful experience</h2>
+        <a class = "open_menu" href="burger.html">OPEN MENU</a>
+    </div>
+</body>
+<footer>
+    <a href="https://twitter.com/yourmidnitelily?t=WdeT5LlndfYwdvoboNZvGg&s=09" target="_blank"><img class = "sosmed" src = "./images/twitter.png"></a>
+    <a href="https://www.facebook.com/renaldi.antonioii/" target="_blank"><img class = "sosmed" src = "./images/facebook.png"></a>
+    <a href="https://www.instagram.com/renaldi_antonio/" target="_blank"><img class = "sosmed" src = "./images/instagram.png"></a>
+    <p class="copy_text">Copyright &copy 2021 Renaldi Antonio. All Rights Reserved</p>
+</footer>
+</html>
